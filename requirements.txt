@@ -2,5 +2,4 @@ pandas
 numpy
 faker
 faker_vehicle
-faker.providers
 datetime
