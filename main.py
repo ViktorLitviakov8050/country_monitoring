@@ -41,21 +41,21 @@ def determine_country_color(country):
         'red': '#FF0000'
     }
 
-    # match True:
-    #     case _ if country.diff_expected_and_real_revenue > 2:
-    #         return colors['green']
-    #     case _ if country.diff_expected_and_real_revenue < 0.5:
-    #         return colors['red']
+    match True:
+        case _ if country.diff_expected_and_real_revenue > 2:
+            return colors['green']
+        case _ if country.diff_expected_and_real_revenue < 0.5:
+            return colors['red']
 
-    # return colors['yellow']
+    return colors['yellow']
 
 
-    if country['diff_expected_and_real_revenue'] > 2:
-        return colors['green']
-    elif country['diff_expected_and_real_revenue'] < 0.5:
-        return colors['red']
-    else:
-        return colors['yellow']
+    # if country['diff_expected_and_real_revenue'] > 2:
+    #     return colors['green']
+    # elif country['diff_expected_and_real_revenue'] < 0.5:
+    #     return colors['red']
+    # else:
+    #     return colors['yellow']
 
 
 joined_expected_and_real_revenue_by_country['color'] = joined_expected_and_real_revenue_by_country.apply(
