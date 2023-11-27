@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from fake_data import generate_dataset, generate_dataset_plan
+# from fake_data import generate_dataset, generate_dataset_plan
 
 countries = pd.read_csv('countries.csv')
 
