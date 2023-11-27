@@ -1,6 +1,6 @@
 pandas
 numpy
 faker
-faker_vehiclet 
-faker.providerst
+faker_vehicle
+faker.providers
 datetime
