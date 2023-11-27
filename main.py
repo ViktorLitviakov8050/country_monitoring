@@ -1,16 +1,16 @@
 import pandas as pd
 import streamlit as st
-# from fake_data import generate_dataset, generate_dataset_plan
+from fake_data import generate_dataset, generate_dataset_plan
 
 countries = pd.read_csv('countries.csv')
 
 df_size = st.number_input('Dataset size', step=1, value=100)
 
-# expected_revenue = generate_dataset_plan()
-expected_revenue = pd.read_csv('local_dataset_plan.csv')
+expected_revenue = generate_dataset_plan()
+# expected_revenue = pd.read_csv('local_dataset_plan.csv')
 
-# sales_report = generate_dataset(df_size)
-sales_report = pd.read_csv('local_dataset.csv')
+sales_report = generate_dataset(df_size)
+# sales_report = pd.read_csv('local_dataset.csv')
 
 
 revenue_by_country = sales_report.groupby(
